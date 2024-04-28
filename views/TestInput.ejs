@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+
+  <body>
+    <div class="w-full h-screen">
+      <div
+        class="navbar h-[10%] w-full bg-zinc-700 text-white flex justify-evenly items-center mx-auto"
+    >
+        <a href="/"
+        class="font-bold text-xl w-[65%] flex justify-start align-center ml-5"
+        >
+        Company
+        </a>
+        <div
+        class="flex justify-between items-center font-semibold text-sm w-[35%] mr-5"
+        >
+        <a href="/BookSession">
+            <h5><span class="text-yellow-600">Book your session</span></h5>
+        </a>
+        <a href="/about">
+            <h5>About</h5>
+        </a>
+        <a href="/contact">
+            <h5>Contact us</h5>
+        </a>
+        <a href="/profile">
+            <h5 class="px-3 py-1 border-zinc-100 border-[2px] rounded-full">
+            Profile
+            </h5>
+        </a>
+        </div>
+        </div> 
+        
+        <div>
+
+          <div class="w-[80%] px-8 py-4 my-4 mx-auto ">
+            <h1 class="text-3xl font-semibold text-green-500">
+              Please interact with the process to know your
+              <span class="text-blue-500 font-bold">Mental Health </span>
+            </h1>
+          </div>
+
+          
+      <form action="/test" method="post">
+        <div class="formsdata w-[80%] mx-auto px-8 py-4">
+          <div
+            class=" shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+          > 
+
+          <div class="mb-4 w-2/6 text-lg">
+            <label
+              class="block text-gray-700 text-2xl font-bold mb-2"
+              for="question"
+              > How often do you feel overwhelmed by daily tasks?
+              </label
+            >
+          </div>
+            <div class="w-4/6 flex justify-between items-center gap-6">
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating1"
+                  name="q1"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="1"
+                />
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating2"
+                  name="q1"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="2"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating3"
+                  name="q1"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="3"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating4"
+                  name="q1"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="4"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating5"
+                  name="q1"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+          >
+            <div class="mb-4 w-2/6">
+              <label
+                class="block text-gray-700 text-2xl font-bold mb-2"
+                for="question"
+                >How well do you sleep at night?
+                </label
+              >
+            </div>
+
+            <div class="w-4/6 flex justify-between items-center gap-6">
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating11"
+                  name="q2"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="1"
+                />
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating22"
+                  name="q2"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="2"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating33"
+                  name="q2"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="3"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating44"
+                  name="q2"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="4"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating55"
+                  name="q2"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+          >
+            <div class="mb-4 w-2/6">
+              <label
+                class="block text-gray-700 text-2xl font-bold mb-2"
+                for="question"
+                > How often do you experience feelings of hopelessness or despair?
+</label
+              >
+            </div>
+
+            <div class="w-4/6 flex justify-between items-center gap-6">
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating111"
+                  name="q3"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="1"
+                />
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating222"
+                  name="q3"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="2"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating333"
+                  name="q3"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="3"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating444"
+                  name="q3"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="4"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating555"
+                  name="q3"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+          >
+            <div class="mb-4 w-2/6">
+              <label
+                class="block text-gray-700 text-2xl font-bold mb-2"
+                for="question"
+                >  How often do you experience thoughts of self-harm or suicide?
+                </label
+              >
+            </div>
+
+            <div class="w-4/6 flex justify-between items-center gap-6">
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating1111"
+                  name="q4"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="1"
+                />
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating2222"
+                  name="q4"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="2"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating3333"
+                  name="q4"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="3"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating4444"
+                  name="q4"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="4"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating5555"
+                  name="q4"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+          >
+            <div class="mb-4 w-2/6">
+              <label
+                class="block text-gray-700 text-2xl font-bold mb-2"
+                for="question"
+                >  How would you rate your ability to cope with feelings of hopelessness or despair?
+
+                </label
+              >
+            </div>
+
+            <div class="w-4/6 flex justify-between items-center gap-6">
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating1111"
+                  name="q5"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="1"
+                />
+              </div>
+
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating2222"
+                  name="q5"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="2"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating3333"
+                  name="q5"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="3"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating4444"
+                  name="q5"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="4"
+                />
+              </div>
+              <div class="flex justify-between items-center mb-4">
+                <input
+                  type="radio"
+                  id="rating5555"
+                  name="q5"
+                  class="form-radio h-5 w-5 text-gray-600"
+                  value="5"
+                />
+              </div>
+            </div>
+            
+          </div>
+
+
+          <div
+          class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+        >
+          <div class="mb-4 w-2/6">
+            <label
+              class="block text-gray-700 text-2xl font-bold mb-2"
+              for="question"
+              >  How often do you feel like a burden to others?
+
+              </label
+            >
+          </div>
+
+          <div class="w-4/6 flex justify-between items-center gap-6">
+            <div class="flex justify-between items-center mb-4">
+              <input
+                type="radio"
+                id="rating1111"
+                name="q6"
+                class="form-radio h-5 w-5 text-gray-600"
+                value="1"
+              />
+            </div>
+
+            <div class="flex justify-between items-center mb-4">
+              <input
+                type="radio"
+                id="rating2222"
+                name="q6"
+                class="form-radio h-5 w-5 text-gray-600"
+                value="2"
+              />
+            </div>
+            <div class="flex justify-between items-center mb-4">
+              <input
+                type="radio"
+                id="rating3333"
+                name="q6"
+                class="form-radio h-5 w-5 text-gray-600"
+                value="3"
+              />
+            </div>
+            <div class="flex justify-between items-center mb-4">
+              <input
+                type="radio"
+                id="rating4444"
+                name="q6"
+                class="form-radio h-5 w-5 text-gray-600"
+                value="4"
+              />
+            </div>
+            <div class="flex justify-between items-center mb-4">
+              <input
+                type="radio"
+                id="rating5555"
+                name="q6"
+                class="form-radio h-5 w-5 text-gray-600"
+                value="5"
+              />
+            </div>
+          </div>
+          
+        </div>
+
+
+        <div
+        class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+      >
+        <div class="mb-4 w-2/6">
+          <label
+            class="block text-gray-700 text-2xl font-bold mb-2"
+            for="question"
+            > How supported do you feel by those around you in dealing with your emotional struggles?
+            </label
+          >
+        </div>
+
+        <div class="w-4/6 flex justify-between items-center gap-6">
+          <div class="flex justify-between items-center mb-4">
+            <input
+              type="radio"
+              id="rating1111"
+              name="q7"
+              class="form-radio h-5 w-5 text-gray-600"
+              value="1"
+            />
+          </div>
+
+          <div class="flex justify-between items-center mb-4">
+            <input
+              type="radio"
+              id="rating2222"
+              name="q7"
+              class="form-radio h-5 w-5 text-gray-600"
+              value="2"
+            />
+          </div>
+          <div class="flex justify-between items-center mb-4">
+            <input
+              type="radio"
+              id="rating3333"
+              name="q7"
+              class="form-radio h-5 w-5 text-gray-600"
+              value="3"
+            />
+          </div>
+          <div class="flex justify-between items-center mb-4">
+            <input
+              type="radio"
+              id="rating4444"
+              name="q7"
+              class="form-radio h-5 w-5 text-gray-600"
+              value="4"
+            />
+          </div>
+          <div class="flex justify-between items-center mb-4">
+            <input
+              type="radio"
+              id="rating5555"
+              name="q7"
+              class="form-radio h-5 w-5 text-gray-600"
+              value="5"
+            />
+          </div>
+        </div>
+        
+      </div>
+
+
+
+      <div
+      class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+    >
+      <div class="mb-4 w-2/6">
+        <label
+          class="block text-gray-700 text-2xl font-bold mb-2"
+          for="question"
+          > How would you rate your ability to cope with feelings of hopelessness or despair?
+          </label
+        >
+      </div>
+
+      <div class="w-4/6 flex justify-between items-center gap-6">
+        <div class="flex justify-between items-center mb-4">
+          <input
+            type="radio"
+            id="rating1111"
+            name="q8"
+            class="form-radio h-5 w-5 text-gray-600"
+            value="1"
+          />
+        </div>
+
+        <div class="flex justify-between items-center mb-4">
+          <input
+            type="radio"
+            id="rating2222"
+            name="q8"
+            class="form-radio h-5 w-5 text-gray-600"
+            value="2"
+          />
+        </div>
+        <div class="flex justify-between items-center mb-4">
+          <input
+            type="radio"
+            id="rating3333"
+            name="q8"
+            class="form-radio h-5 w-5 text-gray-600"
+            value="3"
+          />
+        </div>
+        <div class="flex justify-between items-center mb-4">
+          <input
+            type="radio"
+            id="rating4444"
+            name="q8"
+            class="form-radio h-5 w-5 text-gray-600"
+            value="4"
+          />
+        </div>
+        <div class="flex justify-between items-center mb-4">
+          <input
+            type="radio"
+            id="rating5555"
+            name="q8"
+            class="form-radio h-5 w-5 text-gray-600"
+            value="5"
+          />
+        </div>
+      </div>
+      
+    </div>
+
+
+
+
+    <div
+    class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+  >
+    <div class="mb-4 w-2/6">
+      <label
+        class="block text-gray-700 text-2xl font-bold mb-2"
+        for="question"
+        > How often do you feel like a burden to others?
+        </label
+      >
+    </div>
+
+    <div class="w-4/6 flex justify-between items-center gap-6">
+      <div class="flex justify-between items-center mb-4">
+        <input
+          type="radio"
+          id="rating1111"
+          name="q9"
+          class="form-radio h-5 w-5 text-gray-600"
+          value="1"
+        />
+      </div>
+
+      <div class="flex justify-between items-center mb-4">
+        <input
+          type="radio"
+          id="rating2222"
+          name="q9"
+          class="form-radio h-5 w-5 text-gray-600"
+          value="2"
+        />
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <input
+          type="radio"
+          id="rating3333"
+          name="q9"
+          class="form-radio h-5 w-5 text-gray-600"
+          value="3"
+        />
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <input
+          type="radio"
+          id="rating4444"
+          name="q9"
+          class="form-radio h-5 w-5 text-gray-600"
+          value="4"
+        />
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <input
+          type="radio"
+          id="rating5555"
+          name="q9"
+          class="form-radio h-5 w-5 text-gray-600"
+          value="5"
+        />
+      </div>
+    </div>
+    
+  </div>
+
+  <div
+  class="bg-white shadow-md rounded-xl shadow-2xl shadow-zinc-400 px-8 pt-6 pb-8 mb-4 w-full flex justify-between items-center"
+>
+  <div class="mb-4 w-2/6">
+    <label
+      class="block text-gray-700 text-2xl font-bold mb-2"
+      for="question"
+      >How supported do you feel by those around you in dealing with your emotional struggles?
+      </label
+    >
+  </div>
+
+  <div class="w-4/6 flex justify-between items-center gap-6">
+    <div class="flex justify-between items-center mb-4">
+      <input
+        type="radio"
+        id="rating1111"
+        name="q10"
+        class="form-radio h-5 w-5 text-gray-600"
+        value="1"
+      />
+    </div>
+
+    <div class="flex justify-between items-center mb-4">
+      <input
+        type="radio"
+        id="rating2222"
+        name="q10"
+        class="form-radio h-5 w-5 text-gray-600"
+        value="2"
+      />
+    </div>
+    <div class="flex justify-between items-center mb-4">
+      <input
+        type="radio"
+        id="rating3333"
+        name="q10"
+        class="form-radio h-5 w-5 text-gray-600"
+        value="3"
+      />
+    </div>
+    <div class="flex justify-between items-center mb-4">
+      <input
+        type="radio"
+        id="rating4444"
+        name="q10"
+        class="form-radio h-5 w-5 text-gray-600"
+        value="4"
+      />
+    </div>
+    <div class="flex justify-between items-center mb-4">
+      <input
+        type="radio"
+        id="rating5555"
+        name="q10"
+        class="form-radio h-5 w-5 text-gray-600"
+        value="5"
+      />
+    </div>
+  </div>
+  
+</div>
+        </div>
+        <div class="w-[80%] mx-auto flex justify-center items-center px-8 gap-4">
+
+        
+
+          <input
+            class="w-full mx-auto px-8 py-4 text-2xl font-semibold text-zinc-800 bg-green-400 rounded-xl"
+            type="submit"
+            value="Submit"
+          />
+
+        </div>
+      </form>
+
+
+        </div>
+
+   
+ 
+
+    </div>
+
+  </body>
+</html>

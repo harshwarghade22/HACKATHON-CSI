@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="w-full h-screen bg-black">
+        <div
+        class="navbar h-[10%] w-full bg-zinc-700 text-white flex justify-evenly items-center mx-auto"
+    >
+        <a href="/"
+        class="font-bold text-xl w-[65%] flex justify-start align-center ml-5"
+        >
+        Company
+        </a>
+        <div
+        class="flex justify-between items-center font-semibold text-sm w-[35%] mr-5"
+        >
+        <a href="/BookSession">
+            <h5><span class="text-yellow-600">Book your session</span></h5>
+        </a>
+        <a href="/about">
+            <h5>About</h5>
+        </a>
+        <a href="/contact">
+            <h5>Contact us</h5>
+        </a>
+        <a href="/profile">
+            <h5 class="px-3 py-1 border-zinc-100 border-[2px] rounded-full">
+            Profile
+            </h5>
+        </a>
+        </div>
+        </div>  
+    
+        <div class="w-[90%] h-[90%] mx-auto flex justify-between items-center bg-white">
+            <div class="w-full h-full p-8 flex justify-between items-center">
+                
+    
+                <div class="w-1/2 h-full flex flex-col justify-center items-center">
+                    <% if (user.risk >= 80 && user.risk <= 100) { %>
+                    <div class="flex justify-center items-center ">
+                        <div class="layer1 relative z-10 w-80 h-80 bg-red-600 rounded-full flex justify-center items-center">
+                            <div class="layer2 absolute z-20 w-64 h-64 bg-white rounded-full flex justify-center items-center">
+                                <h1 class="text-7xl font-semibold text-red-700"><%= user.risk %>%</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <% } else if (user.risk < 80 && user.risk >= 60) { %>
+                    <div class="flex justify-center items-center">
+                        <div class="layer1 relative z-10 w-80 h-80 bg-yellow-400 rounded-full flex justify-center items-center">
+                            <div class="layer2 absolute z-20 w-64 h-64 bg-white rounded-full flex justify-center items-center">
+                                <h1 class="text-7xl font-semibold text-orange-400"><%= user.risk %>%</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <% } else if (user.risk < 60) { %>
+                    <div class="flex justify-center items-center">
+                        <div class="layer1 relative z-10 w-80 h-80 bg-green-400 rounded-full flex justify-center items-center">
+                            <div class="layer2 absolute z-20 w-64 h-64 bg-white rounded-full flex justify-center items-center">
+                                <h1 class="text-7xl font-semibold text-green-400"><%= user.risk %>%</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <% } else { %>
+                    <div>
+                        <h1>user.risk not found</h1>
+                    </div>
+                    <% } %>
+    
+                    <div class="my-4 p-4">
+                        <h1 class="text-2xl font-semibold  text-blue-600/90 px-4"> <%= user.name %></h1>
+                        <% if (user.risk > 80) { %>
+                        <div>
+                            <p class="text-xl font-thin tracking-tight px-4 "><span class="font-semibold text-orange-400">Seek Professional Help:</span> Start by consulting with a mental health professional such as a therapist, psychologist, or psychiatrist. They can provide personalized guidance and treatment options tailored to your specific needs.
+                            </p>
+                        </div>
+                        <% } else if (user.risk <= 80 && user.risk >= 60) { %>
+                        <div>
+                            <p class="text-xl font-thin tracking-tight px-4 "><span class="font-semibold text-orange-400">Therapy and Counseling:</span> Consider therapy or counseling to address underlying issues and learn coping strategies. Cognitive-behavioral therapy (CBT), dialectical behavior therapy (DBT), and other evidence-based approaches can be effective for managing medium-level mental health concerns.
+                            </p>                        </div>
+                        <% } else { %>
+                        <div>
+                            <p class="text-xl font-thin tracking-tight px-4"><span class="font-semibold text-orange-400">Self-Reflection:</span> Take some time to reflect on your thoughts, feelings, and behaviors. Journaling can be a helpful tool for gaining insight into your mental state and identifying any patterns or triggers.
+                            </p>    
+                            <p class="text-xl font-thin tracking-tight px-4"><span class="font-semibold text-orange-400">Physical Activity:</span> Incorporate regular physical activity into your routine. Even a short walk or gentle stretching can help boost mood and reduce stress.
+
+                            </p>        
+                         </div>
+                        <% } %>
+                    </div>
+                </div>
+    
+                <% if (user.risk >= 80 && user.risk <= 100) { %>
+                <div class="w-1/2 h-full ">
+                    <div class="w-full h-[20%] bg-red-600 my-8 flex justify-center items-center rounded-tr-3xl rounded-bl-3xl">
+                        <h1 class="text-2xl font-bold text-center text-white">You're At Very HIGH Risk....</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <div class="w-2/6  flex flex-col justify-center items-center gap-4">
+                                <button class="w-48 h-20 bg-green-400 text-xl font-semibold text-white rounded-tr-2xl rounded-bl-2xl">Read Blogs</button>
+                                <a 
+                                href="https://www.youtube.com/watch?v=HI2yz2_wJ8Y"
+                                class="w-48 h-20 bg-blue-400 text-xl font-semibold text-white rounded-tr-2xl rounded-bl-2xl px-4 flex justify-center items-center">Video Link</a>
+                            </div>
+                            <div class="w-4/6 flex justify-center items-center p-4 ">
+                                <img class="w-[80%] h-60 object-center object-cover rounded-xl border-2 border-bg-black shadow-lg" src="https://www.healthyplace.com/sites/default/files/uploads/2012/09/link-stress-mentalillness.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } else if (user.risk < 80 && user.risk >= 60) { %>
+                <div class="w-1/2 h-full ">
+                    <div class="w-full h-[20%] bg-yellow-500/80 my-8 flex justify-center items-center rounded-tr-3xl rounded-bl-3xl">
+                        <h1 class="text-2xl font-bold text-center text-white">You're At Medium Risk</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <div class="w-2/6  flex flex-col justify-center items-center gap-4">
+                                <button class="w-48 h-20 bg-green-400 text-xl font-semibold text-white rounded-tr-2xl rounded-bl-2xl">Read Blogs</button>
+                                <a  href="/stressmanager" class="w-48 h-20 bg-blue-400 text-xl font-semibold text-white rounded-tr-2xl rounded-bl-2xl px-4 flex justify-center items-center">Solutions.. </a>
+                            </div>
+                            <div class="w-4/6 flex justify-center items-center p-4 ">
+                                <img class="w-[80%] h-60 object-center object-cover rounded-xl border-2 border-bg-black shadow-lg" src="https://www.redcross.ca/crc/BlogImagesEn/mental-health_600-min-(002).jpg?ext=.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } else if (user.risk < 60) { %>
+                <div class="w-1/2 h-full ">
+                    <div class="w-full h-[20%] bg-green-500/80 my-8 flex justify-center items-center rounded-tr-3xl rounded-bl-3xl">
+                        <h1 class="text-2xl font-bold text-center text-white">You are very healthy</h1>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <div class="w-2/6  flex flex-col justify-center items-center gap-4">
+                                <button class="w-48 h-20 bg-green-400 text-xl font-semibold text-white rounded-tr-2xl rounded-bl-2xl">Read Blogs</button>
+                                <button class="w-48 h-20 bg-blue-400 text-xl font-semibold text-white rounded-tr-2xl rounded-bl-2xl px-4">Explore More</button>
+                            </div>
+                            <div class="w-4/6 flex justify-center items-center p-4 ">
+                                <img class="w-[80%] h-60 object-center object-cover rounded-xl border-2 border-bg-black shadow-lg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2kLlZQMKrJNFITTAtPI0p7zDvje9TGQ3TtHH2sqaPtg&s" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } else { %>
+                <div>
+                    <h1>user.risk not found</h1>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    
+      </body>
+</html>

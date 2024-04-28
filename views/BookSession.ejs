@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+
+
+        <div class="w-full h-screen">
+          <div
+          class="navbar h-[10%] w-full bg-zinc-700 text-white flex justify-evenly items-center mx-auto"
+      >
+          <a href="/"
+          class="font-bold text-xl w-[65%] flex justify-start align-center ml-5"
+          >
+          Company
+          </a>
+          <div
+          class="flex justify-between items-center font-semibold text-sm w-[35%] mr-5"
+          >
+          <a href="/BookSession">
+              <h5><span class="text-yellow-600">Book your session</span></h5>
+          </a>
+          <a href="/about">
+              <h5>About</h5>
+          </a>
+          <a href="/contact">
+              <h5>Contact us</h5>
+          </a>
+          <a href="/profile">
+              <h5 class="px-3 py-1 border-zinc-100 border-[2px] rounded-full">
+              Profile
+              </h5>
+          </a>
+          </div>
+          </div> 
+
+          <div class="h-[90%] w-screen bg-zinc-200 flex justify-evenly items-center">
+     
+            <div class="left w-[55%] h-full flex flex-col justify-evenly items-center">
+            <h1 class="text-3xl font-semibold mt-[20px] ">Book your <span class="text-orange-400">free counselling</span> session. Now !</h1>
+            <form class="mt-[50px]" action="/submit-session font-semibold" method="post">
+                <label for="name">Name:</label>
+                <input class="w-3/4" type="text" id="name" name="name" required><br><br>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+        
+                <label for="dateTime">Date and Time:</label>
+                <input type="datetime-local" id="dateTime" name="dateTime" required><br><br>
+        
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" id="duration" name="duration" required><br><br>
+        
+                <label for="sessionStatus">Session Status:</label>
+                <select id="sessionStatus" name="sessionStatus" required>
+                    <option value="scheduled">Scheduled</option>
+                    <option value="completed">Completed</option>
+                    <option value="canceled">Canceled</option>
+                </select><br><br>
+        
+                <label for="patientFeedback">Patient Feedback:</label><br>
+                <textarea id="patientFeedback" name="patientFeedback" rows="4" cols="50"></textarea><br><br>
+        
+                <input class="px-4 py-2 text-white bg-yellow-600 rounded-lg font-semibold " type="submit" value="Submit">
+            </form>
+        
+            </div>
+            <div class="right w-[45%] h-full p-4">
+             <img 
+             class="rounded-tr-3xl rounded-bl-3xl overflow-hidden w-full h-full object-cove"
+             src="https://images.unsplash.com/photo-1604881991664-593b31b88488?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"   />
+            </div>
+          </div>
+        </div>
+  
+   
+<script src="/javascript/script.js"></script>
+</body>
+</html>
